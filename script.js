@@ -48,16 +48,19 @@ function angryMood(){
     changeBackgroundColor("red");
     changeTextColor("maroon");
     iterate(angryImages);
+    
 }
 function boredMood(){
     changeBackgroundColor("dimGrey");
     changeTextColor("lightGrey");
     iterate(boredImages);
+    
 }
 function hungryMood(){
     changeBackgroundColor("coral");
     changeTextColor("orangeRed");
    iterate(hungryImages);
+  
 }
 
 function changeBackgroundColor(bcolor){
@@ -70,7 +73,9 @@ function changeTextColor(color){
 
 function iterate(array){
     array.forEach(function(element){
-    $("body").append("<img src=" + element +">");
+    $(".images").append("<img src=" + element +">");
 });
 }
+
+
 
